@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/frog_attack.ogg-346782a7b2e73fb7b10fc26fbe9527da.oggstr"
+
+[deps]
+
+source_file="res://assets/generic/frog_attack.ogg"
+dest_files=[ "res://.import/frog_attack.ogg-346782a7b2e73fb7b10fc26fbe9527da.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

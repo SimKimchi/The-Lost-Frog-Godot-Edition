@@ -1,0 +1,86 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://ui-elements/Platforms.tres" type="TileSet" id=1]
+[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/jungle/background_jungle_1.png" type="Texture" id=3]
+[ext_resource path="res://assets/jungle/background_jungle_2.png" type="Texture" id=4]
+[ext_resource path="res://assets/jungle/background_jungle_3.png" type="Texture" id=5]
+[ext_resource path="res://assets/jungle/background_jungle_4.png" type="Texture" id=6]
+[ext_resource path="res://assets/jungle/background_jungle_5.png" type="Texture" id=7]
+[ext_resource path="res://characters/enemies/lizard/Lizard.tscn" type="PackedScene" id=8]
+
+[node name="JunglePlanetScene" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Layer5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 960, 320 )
+motion_scale = Vector2( 0, 0 )
+motion_offset = Vector2( -600, -300 )
+
+[node name="BackGround5" type="Sprite" parent="ParallaxBackground/Layer5"]
+texture = ExtResource( 7 )
+
+[node name="Layer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 960, 320 )
+motion_scale = Vector2( 0.25, 0.25 )
+motion_offset = Vector2( -350, -200 )
+
+[node name="BackGround4" type="Sprite" parent="ParallaxBackground/Layer4"]
+texture = ExtResource( 6 )
+
+[node name="Layer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 960, 320 )
+motion_scale = Vector2( 0.6, 0.6 )
+motion_offset = Vector2( -225, -165 )
+
+[node name="BackGround3" type="Sprite" parent="ParallaxBackground/Layer3"]
+texture = ExtResource( 5 )
+
+[node name="Layer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 960, 320 )
+motion_scale = Vector2( 0.75, 0.75 )
+motion_offset = Vector2( -100, -58 )
+
+[node name="BackGround2" type="Sprite" parent="ParallaxBackground/Layer2"]
+texture = ExtResource( 4 )
+
+[node name="Layer1" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 960, 320 )
+motion_scale = Vector2( 0.85, 0.85 )
+motion_offset = Vector2( -65, -60 )
+
+[node name="BackGround1" type="Sprite" parent="ParallaxBackground/Layer1"]
+texture = ExtResource( 3 )
+
+[node name="Platforms" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 65543, 4, 0, 65544, 5, 0, 65545, 5, 0, 65546, 5, 0, 65547, 5, 0, 65548, 6, 0, 131078, 7, 0, 196613, 7, 0, 196630, 4, 0, 196631, 5, 0, 196632, 5, 0, 196633, 5, 0, 196634, 5, 0, 196635, 5, 0, 196636, 5, 0, 196637, 5, 0, 262144, 5, 0, 262145, 5, 0, 262146, 5, 0, 262147, 6, 0, 262154, 4, 0, 262155, 5, 0, 262156, 5, 0, 262157, 5, 0, 262158, 6, 0, 262160, 4, 0, 262161, 5, 0, 262162, 5, 0, 262163, 5, 0, 262164, 6, 0, 327684, 7, 0, 327702, 7, 0, 393221, 7, 0, 393240, 4, 0, 393241, 5, 0, 393242, 5, 0, 393243, 6, 0, 458758, 7, 0, 458781, 4, 0, 524296, 4, 0, 524297, 5, 0, 524298, 5, 0, 524299, 6, 0, 524316, 4, 0, 524317, 6, 0, 589824, 1, 0, 589825, 1, 0, 589826, 2, 0, 589828, 3, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 2, 0, 589840, 3, 0, 589841, 1, 0, 589842, 1, 0, 589843, 1, 0, 589844, 2, 0, 589846, 3, 0, 589847, 2, 0, 589849, 3, 0, 589850, 1, 0, 589851, 1, 0, 589852, 1, 0, 589853, 2, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 88, 544 )
+
+[node name="Lizard1" parent="." instance=ExtResource( 8 )]
+position = Vector2( 416, 563.576 )
+
+[node name="Lizard2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 160, 240 )
+
+[node name="Lizard3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 616, 32 )
+
+[node name="Lizard4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1744, 560 )
+
+[node name="Lizard5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1672, 368 )
+
+[node name="Lizard6" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1632, 176 )
+
+[node name="Lizard7" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1192, 243.576 )
+
+[node name="Lizard8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 784, 240 )

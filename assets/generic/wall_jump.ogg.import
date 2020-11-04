@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/wall_jump.ogg-bee1be3b78dbed7d290b77dc1f794006.oggstr"
+
+[deps]
+
+source_file="res://assets/generic/wall_jump.ogg"
+dest_files=[ "res://.import/wall_jump.ogg-bee1be3b78dbed7d290b77dc1f794006.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
